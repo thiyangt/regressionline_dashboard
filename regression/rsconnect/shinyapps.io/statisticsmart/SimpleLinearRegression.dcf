@@ -1,0 +1,12 @@
+name: SimpleLinearRegression
+title: SimpleLinearRegression
+username:
+account: statisticsmart
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2752576
+bundleId: 3592740
+url: https://statisticsmart.shinyapps.io/SimpleLinearRegression/
+when: 1599223605.6253
+asMultiple: FALSE
+asStatic: FALSE

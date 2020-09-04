@@ -14,7 +14,7 @@ ui <- fluidPage(
 
     # Application title
     titlePanel("Simple Linear Regression "),
-    print("I want to fit a line (Y=mx+c, where m - slope and c - intercept) to model the relationship between Daughters' height and Mothers' height. What is best guess for the slope and the intercept of the line? Help: Use slider."),
+    print("I want to fit a line (Y=mx+c, where m - slope and c - intercept) to model the relationship between Daughters' height and Mothers' height. What is your best guess for the slope and the intercept of the line? Help: Use slider."),
     hr(),
     
     # Sidebar with a slider input for number of bins 
