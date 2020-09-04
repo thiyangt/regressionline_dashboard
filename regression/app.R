@@ -13,11 +13,14 @@ library(shiny)
 ui <- fluidPage(
 
     # Application title
-    titlePanel("Simple Linear Regression Model: A trend line is a line that is drawn above, below or through various data points in order to show their general direction."),
-
+    titlePanel("Simple Linear Regression "),
+    print("I want to fit a line (Y=mx+c, where m - slope and c - intercept) to model the relationship between Daughters' height and Mothers' height. What is best guess for the slope and the intercept of the line? Help: Use slider."),
+    hr(),
+    
     # Sidebar with a slider input for number of bins 
     sidebarLayout(
         sidebarPanel(
+          
             sliderInput("slope",
                         "Slope:",
                         min = 0.4,
@@ -33,7 +36,12 @@ ui <- fluidPage(
 
         # Show a plot of the generated distribution
        mainPanel(
-           plotOutput("distPlot")
+           plotOutput("distPlot"),
+           hr(),
+           tags$h4("Developed by"),
+           tags$a(href="https://thiyanga.netlify.app/", 
+                  "Thiyanga S Talagala, StatisticsMART.org"),
+           
         )
     )
 )
@@ -61,8 +69,8 @@ server <- function(input, output) {
     
       
     })
-    
-    
+
+
 }
 
 # Run the application 
